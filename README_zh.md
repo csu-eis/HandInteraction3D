@@ -1,7 +1,4 @@
 # HandInteraction3D
-
-[简体中文](README_zh.md)
-
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -10,7 +7,7 @@
 
 ![demo1](https://raw.githubusercontent.com/SheepHuan/yanghuan-images/main/img/demo1.gif)
 
-The pretrained model will be released later.
+预训练模型后续释出。。。
 
 ## Framework
 
@@ -25,7 +22,7 @@ The pretrained model will be released later.
 
 ## Introduce
 
-Our repo is based on [InterHand2.6M](https://mks0601.github.io/InterHand2.6M/). Below is the [related paper list](https://github.com/SheepHuan/PaperNote).
+基于[InterHand2.6M](https://mks0601.github.io/InterHand2.6M/)的改进，此处为相关[文章列表](https://github.com/SheepHuan/PaperNote)。
 
 ### Dataset
 
@@ -34,14 +31,14 @@ Our repo is based on [InterHand2.6M](https://mks0601.github.io/InterHand2.6M/). 
 ## Installation
 
 ```bash
-# pip switch source
-# Tsinghua source
+# pip 换源
+# 清华源
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-# Ali source
+# 阿里源
 pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
-# Tencent source
+# 腾讯源
 pip config set global.index-url http://mirrors.cloud.tencent.com/pypi/simple
-# Douban source
+# 豆瓣源
 pip config set global.index-url http://pypi.douban.com/simple/
 ```
 
@@ -49,13 +46,13 @@ pip config set global.index-url http://pypi.douban.com/simple/
 python create -n hands python=3.8
 conda activate hands
 
-# Install Paddle Inference Library
+# Install Paddle预测库 
 # https://paddle-inference-lib.bj.bcebos.com/2.2.1/python/Windows/GPU/x86-64_vs2017_avx_mkl_cuda11.2_cudnn8/paddlepaddle_gpu-2.2.1.post112-cp38-cp38-win_amd64.whl
 pip install paddlepaddle_gpu-2.2.1.post112-cp38-cp38-win_amd64.whl
 
-# Download TesnorRT https://developer.nvidia.com/nvidia-tensorrt-8x-download
-# choose TesnorRT8.0
-# Installatin guide: https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing-zip
+# 下载 TesnorRT https://developer.nvidia.com/nvidia-tensorrt-8x-download
+# 选择TesnorRT8.0版本
+# 安装指南 https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing-zip
 
 
 # Install other packages
@@ -69,21 +66,22 @@ pip install -r requirements.txt
 # docker
 docker pull paddlepaddle/paddle:2.2.2-gpu-cuda11.2-cudnn8
 
-# create docker environment
+# 创建docker环境
 
 
-# multi GPU training
+
+# 多卡训练
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 python -m paddle.distributed.launch --gpus '0,1,2,3' train.py
 
-# single GPU training
+# 单卡训练
 python  train.py
 
 ```
 
 ## Model Export
 
-export ppyolo model.
+导出ppyolo模型。
 
 ```bash
 cd path/to/PaddleDetection
@@ -97,9 +95,9 @@ python tools/export_model.py \
 
 ### Model Weights
 
-Pretrained Model：None
+模型权重链接：None
 
-Download the entire folder from the weight link and put it in the ` ${model_root_path} / weights ` folder.
+从权重链接上下载整个文件夹后，放到`${model_root_path}/weights`文件夹中。
 
 ## Contributors ✨
 
