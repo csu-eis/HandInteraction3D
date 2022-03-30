@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Geeksun2018",
+      "name": "Geeksun2018",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42086593?v=4",
+      "profile": "https://github.com/Geeksun2018",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "HandInteraction3D",
+  "projectOwner": "deyu-csu",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
