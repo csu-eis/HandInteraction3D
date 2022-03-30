@@ -6,7 +6,6 @@
   "commit": false,
   "contributors": [
     {
-
       "login": "SheepHuan",
       "name": "Huan Yang",
       "avatar_url": "https://avatars.githubusercontent.com/u/48245110?v=4",
@@ -14,10 +13,11 @@
       "contributions": [
         "infra",
         "test",
-        "code"
+        "code",
+        "bug"
       ]
     },
-     {
+    {
       "login": "Geeksun2018",
       "name": "Geeksun2018",
       "avatar_url": "https://avatars.githubusercontent.com/u/42086593?v=4",
