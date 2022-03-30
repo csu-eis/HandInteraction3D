@@ -1,0 +1,7 @@
+.idea/
+log/
+weights/
+lib/
+
+*.whl
+*.zip
