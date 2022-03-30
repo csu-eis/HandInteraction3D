@@ -2,7 +2,7 @@
 
 ## Demo
 
-![](https://raw.githubusercontent.com/SheepHuan/yanghuan-images/main/img/demo1.gif)
+![demo1](https://raw.githubusercontent.com/SheepHuan/yanghuan-images/main/img/demo1.gif)
 
 
 
