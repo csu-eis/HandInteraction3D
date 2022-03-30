@@ -1,4 +1,7 @@
 # HandInteraction3D
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Demo
 
@@ -99,3 +102,23 @@ python tools/export_model.py \
 模型权重链接：None
 
 从权重链接上下载整个文件夹后，放到`${model_root_path}/weights`文件夹中。
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/SheepHuan"><img src="https://avatars.githubusercontent.com/u/48245110?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Huan Yang</b></sub></a><br /><a href="#infra-SheepHuan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/deyu-csu/HandInteraction3D/commits?author=SheepHuan" title="Tests">⚠️</a> <a href="https://github.com/deyu-csu/HandInteraction3D/commits?author=SheepHuan" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
