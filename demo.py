@@ -42,7 +42,7 @@ if __name__ == "__main__":
     print("Detector loaded.")
     #
     #
-    predictor_weight_path = "weights/internet/snapshot_20.pdparams"
+    predictor_weight_path = "weights/internet/snapshot_90.pdparams"
     predictor_cfg = Config()
     predictor = get_model("test", predictor_cfg.joint_nums)
     state_dict = paddle.load(predictor_weight_path)
