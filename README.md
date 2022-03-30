@@ -112,7 +112,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+
     <td align="center"><a href="https://github.com/Geeksun2018"><img src="https://avatars.githubusercontent.com/u/42086593?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Geeksun2018</b></sub></a><br /><a href="#infra-Geeksun2018" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/deyu-csu/HandInteraction3D/commits?author=Geeksun2018" title="Tests">⚠️</a> <a href="https://github.com/deyu-csu/HandInteraction3D/commits?author=Geeksun2018" title="Code">💻</a></td>
+
+    <td align="center"><a href="https://github.com/SheepHuan"><img src="https://avatars.githubusercontent.com/u/48245110?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Huan Yang</b></sub></a><br /><a href="#infra-SheepHuan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/deyu-csu/HandInteraction3D/commits?author=SheepHuan" title="Tests">⚠️</a> <a href="https://github.com/deyu-csu/HandInteraction3D/commits?author=SheepHuan" title="Code">💻</a></td>
   </tr>
 </table>
 
