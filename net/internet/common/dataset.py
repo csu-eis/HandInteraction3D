@@ -1,3 +1,5 @@
+import random
+
 import paddle
 from paddle.io import Dataset
 import paddle.vision.transforms as transforms
@@ -9,14 +11,13 @@ from pycocotools.coco import COCO
 from net.internet.common.utils.preprocessing import load_img, load_skeleton, get_bbox, process_bbox, augmentation, transform_input_to_output_space, trans_point2d
 from net.internet.common.utils.transforms import world2cam, cam2pixel, pixel2cam
 from net.internet.common.utils.vis import vis_keypoints, vis_3d_keypoints
-import scipy.io as sio
 import cv2
 
 
 
 class InterhandsDataset(Dataset):
 
-    def __init__(self,transform,mode='train'):
+    def __init__(self,transform,mode='train',percent=1.0):
         super(InterhandsDataset,self).__init__()
         # self.num_samples=num_samples
         self.transform=transform
@@ -57,7 +58,15 @@ class InterhandsDataset(Dataset):
         else:
             print("Get bbox and root depth from groundtruth annotation")
 
-        for aid in db.anns.keys():
+
+        # TODO 后面还要考虑 选取单手的数据还是双手的数据
+        # 这里选取 percent 占比的数据
+        all_data_num = len(db.anns.keys())
+        selected_data_num = int(all_data_num * percent)
+        selected_data_keys=random.sample(db.anns.keys(),selected_data_num)
+        print(fr"Select {selected_data_num} annotation from {all_data_num}")
+
+        for aid in selected_data_keys:
             ann = db.anns[aid]
             image_id = ann['image_id']
             img = db.loadImgs(image_id)[0]

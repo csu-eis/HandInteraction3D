@@ -70,7 +70,7 @@ class Trainer(Base):
     def _make_batch_generator(self):
         # data load and construct batch generator
         self.logger.info("Creating train dataset...")
-        trainset_loader =InterhandsDataset(transforms.ToTensor(),'train')
+        trainset_loader =InterhandsDataset(transforms.ToTensor(),'train',0.05)
         batch_generator = paddle.io.DataLoader(dataset=trainset_loader, batch_size=cfg.train_batch_size,
                                      shuffle=True, num_workers=cfg.num_thread)
 

@@ -15,7 +15,7 @@ import numpy as np
 class Config:
     ## dataset
     dataset = 'InterHand2.6M'  # InterHand2.6M, RHD, STB
-    dataset_root_path = 'dataset/small_dataset'
+    dataset_root_path = 'InterHand2.6M'
     ## input, output
     input_img_shape = (256, 256)
     output_hm_shape = (64, 64, 64)  # (depth, height, width)
